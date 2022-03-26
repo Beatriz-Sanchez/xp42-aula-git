@@ -1,0 +1,159 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin-top: 107px;
+  width: 462px;
+  height: 61px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  /* identical to box height */
+
+  color: #FFA000;
+}
+
+.imgreceita {
+  height: 300px;
+  margin-top: 28px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 25px 0 58px;
+}
+
+.info li {
+  border-radius: 47px;
+  border: 1px solid #176902;
+  color: #176902;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  font-weight: 600;
+  margin: 0px 30px 0px 0px;
+}
+
+.menu_lateral li {
+  position: relative;
+  z-index: 1;
+  width: 345px;
+  height: 411px;
+  margin: 0 0 70px 0;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu_lateral h2 {
+  margin-top: 178px;
+  margin-bottom: 27px;
+  font-weight: 500;
+  font-size: 30px;
+
+  color: #FFA000;
+}
+
+.menu_lateral li a h3 {
+  margin: 18px 0;
+}
+
+.menu_lateral li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [c1] minmax(660px,auto) [c2] minmax(413px,auto);
+  grid-template-rows: auto;
+  column-gap: 190px;
+}
+
+main {
+  grid-column: c1;
+  grid-row: 1;
+  margin-left: 8%;
+  max-width: 592px;
+  min-width: fit-content;
+}
+
+.menu_lateral {
+  grid-column: c2;
+  grid-row: 1;
+  /* margin-right: 13%; */
+}
+
+.mododepreparo {
+  width: 95%;
+  max-width: 595px;
+}
+
+.mododepreparo p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 166px;
+}
+
+.mododepreparo h3 {
+  margin: 65px 0 37px;
+}
+
+.video h3 {
+  margin: 65px 0 37px;
+}
+
+.ingredientes {
+  width: 95%;
+}
+
+@media only screen and (max-width: 798px){
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  main{
+    margin: auto;
+  }
+  .menu_lateral h2 {
+    margin-top: 100px
+  }
+  .menu_lateral {
+    margin-bottom: 170px;
+  }
+  .imgreceita {
+    min-height: 50px;
+  }
+}

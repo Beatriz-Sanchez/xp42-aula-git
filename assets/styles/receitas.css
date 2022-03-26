@@ -1,0 +1,74 @@
+h1 {
+  margin: 0 0 69px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+
+  color: #FFA000;
+
+}
+
+
+main {
+  display: block;
+  width: fit-content;
+  max-width: 1440px;
+}
+
+main>article {
+  margin: 104px 117px 128px;
+
+}
+
+.receitas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 117px;
+}
+
+.receita {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.receita img {
+  width: 345px;
+  height: 342px;
+  display: block;
+}
+
+.receita h2 {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  margin: 12px 0 24px;
+}
+
+.link-receita {
+  color: #ffffff;
+  background: #176902;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 43px;
+}
+
+@media only screen and (max-width: 798px){
+  .receitas {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  main{
+    margin: auto;
+  }
+}

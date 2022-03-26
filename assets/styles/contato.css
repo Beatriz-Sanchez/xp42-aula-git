@@ -1,0 +1,145 @@
+.screen-reader-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+main>section {
+  background: url('../images/contato_head.png') left top no-repeat;
+}
+
+main>section h2 {
+  color: #ffffff;
+  margin: 0 122px 186px;
+  padding-top: 49px;
+  font-size: 70px;
+  font-weight: 700;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.36);
+  min-width: 419px;
+  width: 419px;
+  margin-bottom: 283px;
+}
+
+.formulario {
+  background: url('../images/contato_side.png') left top no-repeat;
+  height: 766px;
+  max-width: 150ex;
+  margin: 0 128px 133px 127px;
+}
+
+fieldset {
+  border: none;
+  margin: 64px 0 0 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+fieldset legend {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+
+  color: #FFC107;
+  text-transform: none;
+
+  margin: 0 0 66px 33px;
+}
+
+form {
+  height: 100%;
+  margin-left: 365px;
+  background: #FFFFFF;
+  border: 1px solid #FFA000;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+fieldset>button {
+  align-self: flex-start;
+  background: #FFC107;
+  border-radius: 50px;
+  border: none;
+  height: 48.6px;
+  width: 164px;
+  margin: -5px 38px;
+}
+
+fieldset>button>span {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: lowercase;
+
+  color: #FFFFFF;
+}
+
+fieldset input,
+textarea {
+  border: 1px solid #FFA000;
+  border-radius: 7px;
+  margin: 0 4% 22px 4.6%;
+  flex-grow: 0;
+  width: 91%;
+  min-height: 48.5px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  padding: 0 33.6px;
+  box-sizing: border-box;
+  text-align: justify;
+
+  color: #58555D;
+}
+
+/* fieldset input::placeholder,
+textarea::placeholder {
+  text-indent: 33.6px;
+} */
+
+textarea::placeholder {
+  height: 53px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 296px;
+  resize: none;
+  padding-top: 15.2px;
+}
+
+main>section h2::after {
+  content: ' :)';
+}
+
+@media only screen and (max-width:798px) {
+  .formulario {
+    background-image: none;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  form {
+    margin: 0;
+    width: 100%;
+    border: none;
+  }
+
+  main>section h2 {
+    margin-bottom: 350px;
+  }
+}
